@@ -1,0 +1,39 @@
+name: Remove Label on Close or Comment
+
+on:
+  issues:
+    types: [closed]
+  issue_comment:
+    types: [created]
+
+jobs:
+  remove-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove label
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const labelToRemove = "status: pending triage"; // <<< replace with your label name
+
+            // Check if it's an issue (not a PR)
+            if (context.payload.issue.pull_request) {
+              console.log("This is a pull request, skipping.");
+              return;
+            }
+
+            const issue_number = context.payload.issue.number;
+            const labels = context.payload.issue.labels.map(l => l.name);
+
+            if (labels.includes(labelToRemove)) {
+              console.log(`Removing label "${labelToRemove}" from issue #${issue_number}`);
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                name: labelToRemove,
+              });
+            } else {
+              console.log(`Label "${labelToRemove}" not found on issue #${issue_number}`);
+            }

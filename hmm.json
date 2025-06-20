@@ -1,0 +1,111 @@
+{
+  "dependencies": [
+    {
+      "name": "lime",
+      "type": "git",
+      "dir": null,
+      "ref": null,
+      "url": "https://github.com/th2l-devs/lime"
+    },
+    {
+      "name": "openfl",
+      "type": "git",
+      "dir": null,
+      "ref": null,
+      "url": "https://github.com/th2l-devs/openfl"
+    },
+    {
+      "name": "flixel",
+      "type": "git",
+      "dir": null,
+      "ref": null,
+      "url": "https://github.com/JS-Engine-things/flixel-JS-Engine"
+    },
+    {
+      "name": "flixel-addons",
+      "type": "haxelib",
+      "version": "3.2.3"
+    },
+    {
+      "name": "flixel-tools",
+      "type": "haxelib",
+      "version": null
+    },
+    {
+      "name": "flixel-ui",
+      "type": "haxelib",
+      "version": "2.6.1"
+    },
+    {
+      "name": "hxcpp",
+      "type": "git",
+      "dir": null,
+      "ref": null,
+      "url": "https://github.com/th2l-devs/hxcpp"
+    },
+    {
+      "name": "hxvlc",
+      "type": "haxelib",
+      "version": "1.9.2"
+    },
+    {
+      "name": "hscript",
+      "type": "haxelib",
+      "version": null
+    },
+    {
+      "name": "hxcpp-debug-server",
+      "type": "haxelib",
+      "version": null
+    },
+    {
+      "name": "flxanimate",
+      "type": "git",
+      "dir": null,
+      "ref": "768740a56b26aa0c072720e0d1236b94afe68e3e",
+      "url": "https://github.com/Dot-Stuff/flxanimate"
+    },
+    {
+      "name": "hxdiscord_rpc",
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/MAJigsaw77/hxdiscord_rpc"
+    },
+    {
+      "name": "linc_luajit",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/th2l-devs/linc_luajit"
+    },
+    {
+      "name": "funkin.vis",
+      "type": "git",
+      "dir": null,
+      "ref": "22b1ce089dd924f15cdc4632397ef3504d464e90",
+      "url": "https://github.com/FunkinCrew/funkVis"
+    },
+    {
+      "name": "grig.audio",
+      "type": "git",
+      "dir": null,
+      "ref": "cbf91e2180fd2e374924fe74844086aab7891666",
+      "url": "https://gitlab.com/haxe-grig/grig.audio.git"
+    },
+    {
+      "name": "away3d",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/moxie-coder/away3d"
+    },
+    {
+      "name": "tjson",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/moxie-coder/tjson"
+    }
+  ]
+}
